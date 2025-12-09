@@ -6,7 +6,7 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 @app.route(route="jftest3")
 def jftest3(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
-
+--this is a comment.
     name = req.params.get('name')
     if not name:
         try:
